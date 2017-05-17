@@ -40,6 +40,7 @@
   }
   &__subgreeting {
     font-size: 2.4rem;
+    margin-bottom:12px;
   }
   &__schevron {
     display: block;
@@ -61,13 +62,14 @@
   }
   &__nav {
     width: 100%;
-    height: 150px;
-    position: relative;
+    height: 75px;
+    position: fixed;
     z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
+    background-color: rgba(0,0,0,.3);
 
     &-item {
       border: 1px solid white;
@@ -79,6 +81,11 @@
       color: white;
 
       &:hover {
+        background-color: white;
+        color: #333;
+      }
+
+      &.active {
         background-color: white;
         color: #333;
       }

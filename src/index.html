@@ -7,25 +7,26 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<header class="header">
+<header class="header" id="header">
 	<div class="header__overlay"></div>
 	<ul class="header__nav">
-		<li class="header__nav-item"><a href="#" class="header__nav-link">Главная</a></li>
-		<li class="header__nav-item"><a href="#" class="header__nav-link">Что случилось</a></li>
-		<li class="header__nav-item"><a href="#" class="header__nav-link">Молодожены</a></li>
-		<li class="header__nav-item"><a href="#" class="header__nav-link">Куда ехать</a></li>
-		<li class="header__nav-item"><a href="#" class="header__nav-link">С кем связаться</a></li>
+		<li class="header__nav-item"><a href="#header" class="header__nav-link active">Главная</a></li>
+		<li class="header__nav-item"><a href="#whatshappened" class="header__nav-link">Что случилось</a></li>
+		<li class="header__nav-item"><a href="#justmarried" class="header__nav-link">Молодожены</a></li>
+		<li class="header__nav-item"><a href="#map" class="header__nav-link">Куда ехать</a></li>
+		<li class="header__nav-item"><a href="#contact" class="header__nav-link">С кем связаться</a></li>
 	</ul>
 	<div class="header__container">
 		<div class="header__greeting">
 			<h1 class="header__greeting-sign">Привет!</h1>
 			<span class="header__subgreeting">Это Свадьба Сергея и Катерины</span>
+			<span class="header__subgreeting">И это твое приглашение</span>
 		</div>
 	</div>
-	<a href="" class="header__schevron"></a>
+	<a href="#whatshappened" class="header__schevron"></a>
 </header>
 <div class="wrapper">
-	<div class="content">
+	<div class="content" id="whatshappened">
 		<div class="content__greet">
 			<h2 class="content__greet-header">Что случилось?</h2>
 		</div>
@@ -62,7 +63,8 @@
 		</div>
 	</div>
 
-	<div class="justmarried">
+	<div class="justmarried" id="justmarried">
+		<h2 class="content__greet-header">Молодожены</h2>
 		<div class="justmarried__person">
 			<div class="person">
 				<div class="person__image kate__image"></div>
@@ -102,6 +104,39 @@
 		</div>
 	</div>
 </div>
+<section class="map" id="map">
+	<div class="content">
+		<h2 class="content__greet-header">Куда ехать?</h2>
+	</div>
+	<div class="map__container" id="map__container"></div>
+</section>
+
+<section class="content contacts bg-secondary" id="contact">
+	<div class="contacts__wrapper">
+		<h2 class="content__greet-header color-secondary">С кем связаться?</h2>
+		<p class="paragraph align__center">В первую очередь свяжитесь с виновниками торжества Сергеем и Екатериной:</p>
+		<div class="row">
+			<div class="six columns contacts__list">
+				<div class="image__round">
+					<img src="images/png/kudinov.png" class="image"/>
+				</div>
+				<h3 class="contacts__headline">Сергей</h3>
+				<p class="contacts__phone">Телефон: <a href="">+7 (926) 490-64-33</a></p>
+				<p class="contacts__email">E-mail: <a href="mailto:ya.alder@gmail.com">ya.alder@gmail.com</a></p>
+			</div>
+			<div class="six columns contacts__list">
+				<div class="image__round">
+					<img src="images/png/voropaeva.png" class="image"/>
+				</div>
+				<h3 class="contacts__headline">Екатерина</h3>
+				<p class="contacts__phone">Телефон: <a href="">+7 (926) 085-33-32</a></p>
+				<p class="contacts__email">E-mail: <a href="mailto:Voropuscha@gmail.com">voropuscha@gmail.com</a></p>
+			</div>
+		</div>
+	</div>
+</section>
 <footer class="footer"></footer>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

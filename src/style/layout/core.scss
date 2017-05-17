@@ -16,3 +16,29 @@ body {
   -ms-backface-visibility:     hidden;
 
 }
+
+.align__center {
+  text-align: center;
+}
+
+.bg-secondary {
+  background-color: $gr800;
+  color: $white;
+}
+
+.color-secondary {
+  color: $white !important;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  &__round {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 5px solid $gr300;
+  }
+}
