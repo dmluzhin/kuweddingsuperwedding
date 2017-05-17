@@ -9,4 +9,12 @@ $(document).ready(function(){
 
 			return false;
 	})
+
+	$('.hamburger').click(function(){
+			$('.header__nav').toggleClass('flex-display');
+	});
+
+	$('.header__nav-link').click(function(){
+		$('.header__nav').removeClass('flex-display');
+	});
 });

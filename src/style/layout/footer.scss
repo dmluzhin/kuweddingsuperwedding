@@ -1,0 +1,22 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $white;
+  background-color: $gr900;
+  padding: 40px 10px;
+  text-align: center;
+
+  &__greet {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+}
+
+.author {
+  color: $white;
+  text-decoration: underline;
+}

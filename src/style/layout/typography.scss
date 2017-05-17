@@ -45,5 +45,12 @@
   @media screen and (max-width: 1024px) {
     font-size: 1.2rem;
     line-height: 2.2rem;
+    padding: 0 10px;
+  }
+
+  &.tiny {
+    font-size: .8rem;
+    margin-bottom: 10px;
+    line-height: 1.3;
   }
 }
